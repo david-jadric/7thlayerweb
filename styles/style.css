@@ -1,0 +1,24 @@
+html{
+  background-color: #79AEAE;
+}
+
+body {
+  width: 600px;
+  margin: 0 auto;
+}
+h1 {
+  margin: 0; /*create lack of spacec between elemtent header and something above it to a margin of 0*/
+  text-align: center;
+  font-size: 60px;
+  text-shadow: 3px 3px 1px black; /*horizontal offset, vertical offset, blur radius*/
+}
+
+p{
+  text-align: center;
+  font-size: 45px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+} /*block and inline elements, images are inline and text is block*/
