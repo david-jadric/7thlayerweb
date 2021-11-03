@@ -2,11 +2,10 @@
 <html lang="en"> <!--wraps all content on page, aka root element-->
 <head> <!--meta data and css live here-->
     <meta charset="UTF-8"> <!--this is the character set used in the documnet-->
-    <title> Seventh Layer </title> <!--page title and bookmark descrption-->
+    <title> Seventh Layer/Transmissions </title> <!--page title and bookmark descrption-->
     <link href="styles/style.css" rel="stylesheet">
 </head>
   <body>
-
     <header>
       <div class = "container">
         <a href="index.html">
@@ -24,22 +23,5 @@
           </nav>
         </div>
     </header>
-
-    <div id="twitch-embed">
-
-      <!-- Load the Twitch embed JavaScript file -->
-      <script src="https://embed.twitch.tv/embed/v1.js"></script>
-
-      <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
-      <script type="text/javascript">
-        new Twitch.Embed("twitch-embed", {
-          width: 1920,
-          height:1080,
-          channel: "ascendtothe7thlayer",
-          layout: "video",
-          allowfullscreen:true,
-        });
-      </script>
-    </div>
   </body>
 </html>

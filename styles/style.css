@@ -1,24 +1,70 @@
-html{
-  background-color: #79AEAE;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
 }
 
-body {
-  width: 600px;
-  margin: 0 auto;
+
+
+li, a, p{
+  font-family: helvetica;
+  font-weight: 500;
+  font-size: 13px;
+  color: grey;
+  text-decoration: none;
 }
-h1 {
-  margin: 0; /*create lack of spacec between elemtent header and something above it to a margin of 0*/
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 2%;
+}
+
+.np{
+  margin-right: auto;
+  padding: 20px;
+  text-transform: uppercase;
+}
+.logo{
+  cursor: pointer;
+}
+
+nav {
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+}
+
+nav li{
+  display: inline-block;
+  margin-left: 70px;
+
+  position: relative;
+}
+
+nav li a {
+  transition: all 0.3s ease 0s;
+}
+
+nav li a:hover {
+  color: blue;
+}
+
+.placeholder {
+  display: flex;
+  align-items:center;
   text-align: center;
-  font-size: 60px;
-  text-shadow: 3px 3px 1px black; /*horizontal offset, vertical offset, blur radius*/
 }
 
-p{
-  text-align: center;
-  font-size: 45px;
+#twitch-embed{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 42.5px;
+  width:  1920px;
+  height: 1080px;
 }
-
-img {
-  display: block;
-  margin: 0 auto;
-} /*block and inline elements, images are inline and text is block*/
