@@ -21,7 +21,11 @@ li, a, p{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.wrap {
   padding: 0px 2%;
+  max-width: 1920px;
 }
 
 .np{
@@ -65,6 +69,17 @@ nav li a:hover {
   justify-content: center;
   align-items: center;
   margin: 42.5px;
-  width:  1920px;
+  /* width:  1920px;
   height: 1080px;
+    Delete the comments but I wanted to say:
+    it's bad to use explicit values for height and width.
+    Instead using 100% etc is more responsive and fluid */
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+#twitch-embed iframe {
+  width: 100%;
+  /* here we're saying to the iframe, always wrap and fit 100% of the width of the container' */
 }
